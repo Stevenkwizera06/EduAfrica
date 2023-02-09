@@ -52,10 +52,10 @@ const Footer = () => {
             <div>
                 <h2 className="text-[20px] font-[700] leading-[24px] text-left py-[10px]">Follow us</h2>
                 <div className="flex items-center gap-6">
-       <ImLinkedin2 className="h-8 w-8 font-[500]leading-[26px] inline-block ml-2 text-center"/>
-       <FiInstagram className="h-8 w-8 font-[500]leading-[26px] inline-block ml-2 text-center"/>
-       <FaFacebookF className="h-8 w-8 font-[500]leading-[26px] inline-block ml-2 text-center"/>
-       <BsTwitter className="h-8 w-8 font-[500]leading-[26px] inline-block ml-2 text-center"/>
+       <ImLinkedin2 className="h-5 w-5 font-[500]leading-[26px] inline-block ml-2 text-center"/>
+       <FiInstagram className="h-5 w-5 font-[500]leading-[26px] inline-block ml-2 text-center"/>
+       <FaFacebookF className="h-5 w-5 font-[500]leading-[26px] inline-block ml-2 text-center"/>
+       <BsTwitter className="h-5 w-5 font-[500]leading-[26px] inline-block ml-2 text-center"/>
                 </div>
             </div>
         </div>
