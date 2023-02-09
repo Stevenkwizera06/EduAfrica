@@ -18,7 +18,7 @@ function Navbar() {
             alt=""
           />
         </a>
-        <div className="relative w-full flex justify-center group items-center">
+        <div className=" w-full flex justify-center group items-center">
           <a
             className="px-8 text-white font-semibold py-4 bg-gray-900 "
             href=""
