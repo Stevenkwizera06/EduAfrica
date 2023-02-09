@@ -1,11 +1,13 @@
 import React from "react";
+import Wrapper from "./Wrapper";
 
 function AboutUs() {
   return (
     <div>
       {" "}
-      <div className="flex p-16 gap-24">
-        <div className="flex flex-col gap-4 ml-14 w-[404px]">
+        <Wrapper>
+      <div className="grid grid-cols-2 p-16 gap-8">
+        <div className="flex flex-col gap-4 ">
           <h1 className="flex  text-3xl font-bold">What we do</h1>
           <p className="w-[470px] h-[192px]">
             The Children’s Foundation provides specialized treatment,
@@ -24,18 +26,18 @@ function AboutUs() {
             </a>
           </div>
         </div>
-        <div className="w-[478px] h-[258px] ">
           <img
+          className="object-contain"
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
             alt=""
           />
-        </div>
       </div>
-      <div className="max-w-[1024px] mx-auto">
-        <h1 className="text-3xl font-bold leading-10 w-10/12">
+        </Wrapper>
+      <Wrapper>
+        <h1 className="text-[30px] font-[700] leading-[36px] text-[##2e2e2e] max-w-[980px] px-[10px]  text-center">
           The Children’s Foundation has helped thousands of children since 1957
         </h1>
-        <p className="mt-4 w-11/12">
+        <p className="mt-4 font-[500] leading-[28.8px] text-[16px] text-center text-[#707070]">
           In the late 1940’s and early 1950’s a group of citizens lead by Esther
           Irwin had grown concerned about children who were not being successful
           at school and who often did not attend. They realized that without
@@ -53,22 +55,22 @@ function AboutUs() {
             alt=""
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6977-scaled.jpeg"
           />
-          <div className="flex flex-col gap-6 bg-yellow-300">
-            <h1 className="text-5xl font-bold">Our mission</h1>
-            <p className="text-gray-600">
+          <div className="flex flex-col items-center text-center gap-6 bg-[#ecdc01] p-[30px]">
+            <h1 className="text-5xl text-[#2e2e2e] text-[30px] font-[700] leading-[36px] text-center font-bold py-2.5">Our mission</h1>
+            <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
               Improving lives by helping children and their families navigate
-              complex challenges.
+              complex challenges. 
             </p>
-            <hr className="w-[70%] h-[1px]" />
-            <h1 className="text-5xl font-bold">Our vision</h1>
-            <p className="text-gray-600">
+            <div className="w-[70%] h-[1px] bg-[#2e2e2e]" />
+            <h1 className="text-5xl text-[#2e2e2e] text-[30px] font-[700] leading-[36px] text-center font-bold">Our vision</h1>
+            <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
               Communities in which each child has the opportunity for optimum
               growth and development, and each family is able to provide the
               best for its children.
             </p>
           </div>
         </div>
-      </div>
+      </Wrapper>
       <div className=" bg-[#2e8bc4] mt-8 mb-8 h-[600px]">
         <div className="max-w-[1024px] mx-auto grid lg:grid-cols-2 justify-center items-center text-center">
           <img
