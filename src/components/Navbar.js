@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import items from "@/data/menuItems";
 import DropDown from "./DropDown";
 
@@ -6,28 +6,30 @@ function Navbar() {
   const [activeTab, setActiveTab] = useState();
 
   return (
-    <div className="w-full h-screen relative">
+    <div className="h-screen relative">
       <video
         loop
         autoPlay
+        muted
         className="absolute object-cover top-0 left-0 w-full h-[90%]"
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
-      <div className="relative z-40">
-        <div className="flex items-center justify-between max-w-5xl mx-auto py-6">
+
+      <div className="relative max-w-[1426px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 px-20 lg:px-0 ">
+        <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
-              className="h-14"
+              className="h-[61px] max-w-[240px]"
               src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
               alt=""
             />
           </a>
-          <div className="hidden group w-full md:flex justify-center ">
+          <div className="hidden group w-fit md:flex justify-center ">
             <a
-              className="px-8 text-white font-semibold py-4 bg-gray-900 "
+              className="px-8 text-white font-semibold py-4 bg-darkBlue "
               href=""
             >
-              MENU
+              Menu
             </a>
             <div className="hidden absolute group-hover:block mt-14">
               <div className="flex">
@@ -73,39 +75,40 @@ function Navbar() {
               </div>
             </div>
           </div>
+          <a
+            className="bg-pink px-8 w-fit text-center text-white font-semibold py-4"
+            href=""
+          >
+            Donate
+          </a>
+        </div>
         <DropDown />
 
-          <div>
-            <a
-              className="px-8 text-white font-semibold py-4 bg-pink-500"
-              href=""
-            >
-              DONATE
-            </a>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center max-w-3xl mx-auto">
-          <h4 className="font-bold text-white text-[100px] leading-[120px] text-center">
-            CHANGING LIVES EVERYDAY
+        <div className="flex items-center justify-start w-[1229px] mx-auto">
+          <h4 className="font-bold text-white text-[100px] leading-[120px]">
+            CHANGING <br /> LIVES <br />
+            <span className="tracking">
+              EVERY <span className="text-brightYellow ">DAY</span>
+            </span>
           </h4>
         </div>
-        <div className="max-w-5xl mx-auto gap-3 mt-8 grid grid-cols-3">
+        <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 grid grid-cols-3 -mb-12">
           <a
-            className="px-8 text-white font-semibold text-center py-8 text-xl bg-blue-500 w-full"
+            className="px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
             href=""
           >
             Ways to give
           </a>
 
           <a
-            className="px-8 text-white font-semibold  text-center py-8 text-xl bg-red-500 w-full"
+            className="px-14 text-white font-semibold  text-center py-8 text-2xl bg-darkBlue "
             href=""
           >
             Our programme
           </a>
 
           <a
-            className="px-8 text-white font-semibold  text-center py-8 text-xl bg-green-500 w-full"
+            className="px-14 text-white font-semibold  text-center py-8 text-2xl bg-pink "
             href=""
           >
             Stories
