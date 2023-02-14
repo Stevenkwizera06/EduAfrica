@@ -21,11 +21,11 @@ function AboutUs() {
             </p>
           </div>
           <div>
-          <img
-            className=""
-            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
-            alt=""
-          />
+            <img
+              className=""
+              src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
+              alt=""
+            />
           </div>
           <div>
             <a
@@ -38,7 +38,7 @@ function AboutUs() {
         </div>
       </Wrapper>
       <Wrapper>
-        <h1 className="text-[30px] font-[700] leading-[36px] text-[##2e2e2e] max-w-[980px] px-[10px]  text-center">
+        <h1 className="text-[30px] font-[700] leading-[36px] text-[#2e2e2e] max-w-[980px] px-[10px]  text-center">
           The Children’s Foundation has helped thousands of children since 1957
         </h1>
         <p className="mt-4 font-[500] leading-[28.8px] text-[16px] text-center text-[#707070]">
@@ -79,7 +79,7 @@ function AboutUs() {
           </div>
         </div>
       </Wrapper>
-      <div className=" bg-[#2e8bc4] mt-8 mb-8 h-[600px]">
+      <div className=" bg-[#2e8bc4] mt-8 -mb-8 h-[600px]">
         <div className="max-w-[1024px] mx-auto grid lg:grid-cols-2 justify-center items-center text-center">
           <img
             className="mt-12"
@@ -98,12 +98,12 @@ function AboutUs() {
               Email Address *
             </p>
             <input
-              className="w-[90%] p-2 placeholder:text-center bg-transparent placeholder:text-lg border-2 border-[#e85c41] focus:outline-none"
+              className="w-[90%] p-2 placeholder:text-white bg-transparent placeholder:text-lg border-2 border-gray-200 border-2 focus:outline-none"
               placeholder="what is your email"
             />
             <div className="flex justify-center ">
               <a
-                className="px-8 text-white font-semibold py-4 bg-pink-500"
+                className="text-white  bg-[#B42886] border-[1.6px] text-[20px] font-[500] leading-[32px] px-[35px] mr-5px] mb-[10px] border-none h-[50px] inline-flex items-center justify-center"
                 href=""
               >
                 Subscribe
@@ -117,37 +117,14 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 justify-center items-center max-w-[1024px] mx-auto space-x-20">
-        <div className="flex flex-col items-center gap-8 text-center">
-          <h1 className="text-3xl font-bold">Capital campaign program</h1>
-          <p>
-            The Children’s Foundation is working to secure our future in Surrey.
-            Help us make sure that we are there for children and families for
-            years to come. Owning our facility out right will provide greater
-            predictability and control over our occupancy costs and help us
-            focus resources and energy on the services children, families, and
-            community need.
-          </p>
-          <p>
-            We need your help and support to raise $5,000,000 in the next 5
-            years.
-          </p>
-        </div>
-
+      <div className=" relative">
         <img
-          className="object-cover    w-[478px] h-[293px]"
-          alt=""
-          src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6928-scaled.jpeg"
-        />
-      </div>
-      <div className="m-12 relative">
-        <img
-          className="object-cover h-11/12 relative"
+          className="object-cover w-full h-11/12  relative"
           src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
           alt=""
         />
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-8">
           <div
             className="px-8  text-white font-semibold -mt-24 text-center py-8 text-xl bg-[#072951] w-[504px] h-[238px] relative z-40"
             href=""
