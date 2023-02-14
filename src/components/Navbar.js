@@ -17,19 +17,11 @@ function Navbar() {
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-<<<<<<< HEAD
-      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[90%] lg:h-[91%] px-6 lg:px-0 ">
-        <div className="flex w-full justify-between mx-auto h-fit pt-8 lg:pt-16">
-          <a href="">
-            <img
-              className="h-[41px] max-w-[160px]"
-=======
       <div className="relative max-w-[1426px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 lg:px-0 ">
         <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
               className="h-[45px] lg:h-[61px] "
->>>>>>> 4e08802 (feat:adding responsiveness)
               src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
               alt=""
             />
@@ -103,14 +95,10 @@ function Navbar() {
               </div>
             </div>
           </div>
-        <DropDown />
+          <DropDown />
 
           <a
-<<<<<<< HEAD
-            className="bg-pink px-8 w-fit text-center text-white font-semibold py-2 lg:py-4"
-=======
             className="bg-pink px-4 lg:px-8 py-2 lg:py-4 w-fit text-center text-white font-semibold "
->>>>>>> 4e08802 (feat:adding responsiveness)
             href=""
           >
             Donate
@@ -126,11 +114,7 @@ function Navbar() {
             </p>
           </h4>
         </div>
-<<<<<<< HEAD
-        <div className="max-w-[1024px] -mb-12 invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-60 lg:pt-24">
-=======
         <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 grid lg:grid-cols-3 ">
->>>>>>> 4e08802 (feat:adding responsiveness)
           <a
             className=" text-white font-semibold text-center py-[32px] text-2xl bg-brightYellow "
             href=""
