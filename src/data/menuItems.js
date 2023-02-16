@@ -1,55 +1,140 @@
 const items = [
-    {
-        title: "Programs",
-        subItems: [
-            {
-                title: "Our Programs",
-                contents: ['Program 1', 'Program 2', 'Program 3']
-            },
-            {
-                title: 'Our pgorams 2',
-                contents: ['Program 4', 'Program 5', 'Program 6']
-            },
-            {
-                title: 'Our programs 3r',
-                contents: ['Program 6', 'Program 7', 'Program 8']
-            },
+  {
+    title: "Programs",
+    subItems: [
+      {
+        title: {
+          name: "Our Programs",
+          href: "https://childrens-foundation.org/our-programs/",
+        },
+        contents: [
+          {
+            name: "Alderwood Family Development Centre",
+            href: "https://childrens-foundation.org/program/alderwood-family-development-centre/",
+          },
+          {
+            name: "Paths at Cindrich",
+            href: "https://childrens-foundation.org/program/paths-at-cindrich/",
+          },
+          {
+            name: "Cedarwood Family Program Support and Services",
+            href: "https://childrens-foundation.org/program/cedarwood-family-program-support-and-services/",
+          },
+          {
+            name: "Cedarwood Family Program Support and Services",
+            href: "https://childrens-foundation.org/program/cedarwood-family-program-support-and-services/",
+          },
         ],
-        bgColor: "bg-green-800"
-    },
-    {
-        title: "About",
-        subItems: [
-            {
-                title: "About us",
-                contents: ['About 1', 'About 2', 'About 3']
-            },
-            {
-                title: 'News',
-                contents: ['About 4', 'About 5', 'About 6']
-            },
-            {
-                title: 'Contact us',
-                contents: ['About 6', 'About 7', 'About 8']
-            },
+      },
+      {
+        title: "",
+        contents: [
+          {
+            name: "Educational Transition centre",
+            href: "https://childrens-foundation.org/program/educational-transition-centre/",
+          },
+          {
+            name: "Surrey Family Preservation Program",
+            href: "https://childrens-foundation.org/program/surrey-family-preservation-program/",
+          },
         ],
-        bgColor: "bg-blue-800"
-    },
-    {
-        title: "Learn More",
-        subItems: [
-            {
-                title: "Stakeholders",
-                contents: ['Learn more 1', 'Learn more 2', 'Learn more 3']
-            },
-            {
-                title: 'Pubications',
-                contents: ['Learn more 4', 'Learn more 5', 'Learn more 6']
-            },
+      },
+      {
+        title: "",
+        contents: [
+          {
+            name: "Respite Program",
+            href: "https://childrens-foundation.org/program/respite-program/",
+          },
+          {
+            name: "Thetis Program",
+            href: "https://childrens-foundation.org/program/thetis-program/",
+          },
         ],
-        bgColor: "bg-orange-800"
-    },
-    
-]
+      },
+    ],
+    bgColor: "bg-darkBlue",
+  },
+  {
+    title: "Campaigns",
+    subItems: [
+      {
+        title: { name: "Our Campaign", href: "#" },
+        contents: [
+          {
+            name: "Capital Campaign",
+            href: "https://childrens-foundation.org/capital-campaign/",
+          },
+        ],
+      },
+    ],
+    bgColor: "bg-[#539FD0]",
+  },
+  {
+    title: "About",
+    subItems: [
+      {
+        title: { name: "About us", href: "#" },
+        contents: [
+          {
+            name: "Our Team",
+            href: "https://childrens-foundation.org/our-team/",
+          },
+          {
+            name: "Our Values",
+            href: "https://childrens-foundation.org/our-values/",
+          },
+          {
+            name: "Impact on Community",
+            href: "https://childrens-foundation.org/our-values/",
+          },
+        ],
+      },
+      {
+        title: { name: "News", href: "#" },
+        contents: [
+          {
+            name: "News & Events",
+            href: "https://childrens-foundation.org/news-events/",
+          },
+        ],
+      },
+      {
+        title: { name: "Contact us", href: "#" },
+        contents: [
+          {
+            name: "Contact",
+            href: "https://childrens-foundation.org/contact/",
+          },
+        ],
+      },
+    ],
+    bgColor: "bg-[#B42886]",
+  },
+  {
+    title: "Learn More",
+    subItems: [
+      {
+        title: { name: "Stakeholders", href: "#" },
+        contents: [
+          {
+            name: "Funders & Donors",
+            href: "https://childrens-foundation.org/stakeholders/",
+          },
+        ],
+      },
+      {
+        title: { name: "Pubications", href: "#" },
+        contents: [
+          {
+            name: "Annual Reports",
+            href: "https://childrens-foundation.org/annual-reports/",
+          },
+        ],
+      },
+    ],
+    bgColor: "bg-[#ECDC01]",
+  },
+];
 
 export default items;
