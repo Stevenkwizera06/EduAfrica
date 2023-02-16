@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { IoIosClose, IoIosAdd } from "react-icons/io";
 import items from "@/data/menuItems";
 
-const DropDown = () => {
+const DropDown = ({ showMenu }) => {
   const [activeTab, setActiveTab] = useState();
-  const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="flex w-full md:hidden justify-center text-white">
-        <FiMenu size={30} color="fff" onClick={() => setShowMenu(!showMenu)} />
-        <div className="md:flex absolute w-[98%] mt-14">
+        <div className="md:flex absolute w-full mt-14">
           {items.map((item, index) => (
             <div
               key={index}
@@ -18,18 +17,25 @@ const DropDown = () => {
                   ? setActiveTab(item.title)
                   : setActiveTab()
               }
-              className={` ${!showMenu ? "hidden" : "block"}`}
+              className={` ${
+                showMenu
+                  ? "pb-14.21 translate-y-4 animate-show"
+                  : "-translate-y-4 animate-unshow"
+              }`}
             >
-              <div className={`${item.bgColor} w-full px-5 py-4`}>
+              <div
+                className={`bg-darkBlue flex justify-between w-full px-5 py-4`}
+              >
                 <p>{item.title}</p>
+                {item.title === activeTab ? <IoIosClose /> : <IoIosAdd />}
               </div>
               {activeTab === item.title
                 ? item.subItems.map((subItem, index) => (
-                    <div key={index} className={`${item.bgColor} w-full`}>
-                      <p>{subItem.title}</p>
+                    <div key={index} className={`bg-darkBlue w-full pl-16`}>
+                      <a href={subItem.title.href}>{subItem.title.name}</a>
                       {subItem.contents.map((content, index) => (
                         <div key={index}>
-                          <p>{content}</p>
+                          <a href={content.href}>{content.name}</a>
                         </div>
                       ))}
                     </div>
