@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import items from "@/data/menuItems";
 import DropDown from "./DropDown";
+import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="h-screen relative">
@@ -24,49 +26,67 @@ function Navbar() {
               alt=""
             />
           </a>
-          <div className="hidden group w-fit md:flex justify-center ">
+          <div className="group w-fit md:flex justify-center ">
             <a
-              className="px-8 text-white font-semibold py-4 bg-darkBlue "
-              href=""
+              className="px-10 hidden md:flex text-white cursor-pointer font-semibold py-4 bg-darkBlue "
+              href="#"
             >
               Menu
             </a>
-            <div className="hidden absolute group-hover:block mt-14">
+            <FiMenu
+              className="md:hidden"
+              size={30}
+              color="fff"
+              onClick={() => setShowMenu(!showMenu)}
+            />
+
+            <div
+              className="hidden absolute md:group-hover:block mt-14"
+              onMouseLeave={() => setActiveTab()}
+            >
               <div className="flex">
                 {items.map((item, index) => (
                   <ul
                     key={index}
                     onMouseEnter={() => setActiveTab(item.title)}
-                    className="flex text-white font-semibold"
+                    className="flex text-white font-medium text-sm"
                   >
-                    <li className={`${item.bgColor} w-full px-20 py-4`}>
-                      {item.title}
+                    <li
+                      className={`${item.bgColor} w-full px-20 py-4 hover:cursor-default`}
+                    >
+                      <a href="#" className="hover:text-gray-400">
+                        {item.title}
+                      </a>
                     </li>
                   </ul>
                 ))}
               </div>
               <div>
-                {items.map((item, i) => (
+                {items.map((item, index) => (
                   <div
-                    key={i}
+                    key={index}
                     style={{
                       backgroundColor: item.bgColor,
                     }}
-                    className="flex text-white font-semibold"
+                    className={`flex ${
+                      item.title === "Learn More" ? "text-black" : "text-white"
+                    } font-semibold`}
                   >
                     {activeTab === item.title
                       ? item.subItems.map((subItem, index) => (
                           <div key={index} className={`${item.bgColor} w-full`}>
-                            <div className="flex">
-                              <p>{subItem.title}</p>
-                            </div>
-                            <div>
-                              {subItem.contents.map((content, index) => (
-                                <div key={index}>
-                                  <p>{content}</p>
-                                </div>
-                              ))}
-                            </div>
+                            {subItem.title === "" ? (
+                              <br />
+                            ) : (
+                              <a href={subItem.title.href}>
+                                {subItem.title.name}
+                              </a>
+                            )}
+                            {subItem.contents.map((content, index) => (
+                              <div key={index}>
+                                <a href={content.href}>{content.name}</a>
+                              </div>
+                            ))}
                           </div>
                         ))
                       : ""}
@@ -82,9 +102,11 @@ function Navbar() {
             Donate
           </a>
         </div>
-        <DropDown />
+        <DropDown
+          showMenu={showMenu}
+        />
 
-        <div className="flex items-center justify-start w-[1229px] mx-auto">
+        <div className="flex items-center justify-start md:w-[1229px] mx-auto">
           <h4 className="font-bold text-white text-[100px] leading-[120px]">
             CHANGING <br /> LIVES <br />
             <span className="tracking">
