@@ -8,7 +8,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="h-screen relative">
+    <div className="lg:h-screen relative">
       <video
         loop
         autoPlay
@@ -95,6 +95,7 @@ function Navbar() {
               </div>
             </div>
           </div>
+
           <DropDown />
 
           <a
@@ -105,8 +106,9 @@ function Navbar() {
           </a>
         </div>
         <DropDown showMenu={showMenu} />
-        <div className="flex items-center justify-start md:w-[900px] px-16 lg:mx-auto">
-          <h4 className="font-bold  text-white text-5xl md:text-6xl lg:text-[90px] lg:leading-[99px]">
+
+        <div className="flex items-center justify-start md:w-[1229px]  mx-auto">
+          <h4 className="font-[700] lg:font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
             CHANGING <br /> LIVES <br />
             <p className="-space-x-[0.2px]">
               <span>EVERY</span>
