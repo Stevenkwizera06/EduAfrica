@@ -8,7 +8,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="h-screen relative">
+    <div className="lg:h-screen relative">
       <video
         loop
         autoPlay
@@ -95,6 +95,7 @@ function Navbar() {
               </div>
             </div>
           </div>
+          
         <DropDown />
 
           <a
@@ -108,8 +109,8 @@ function Navbar() {
           showMenu={showMenu}
         />
 
-        <div className="flex items-center justify-start md:w-[1229px] mx-auto">
-          <h4 className="font-bold text-white text-[100px] leading-[120px]">
+        <div className="flex items-center justify-start md:w-[1229px]  mx-auto">
+          <h4 className="font-[700] lg:font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
             CHANGING <br /> LIVES <br />
             <span className="tracking">
               EVERY <span className="text-brightYellow ">DAY</span>
@@ -139,6 +140,7 @@ function Navbar() {
           </a>
         </div>
       </div>
+      
     </div>
   );
 }
