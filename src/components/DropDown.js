@@ -19,8 +19,8 @@ const DropDown = ({ showMenu }) => {
               }
               className={` ${
                 showMenu
-                  ? "pb-14.21 translate-y-4 animate-show"
-                  : "-translate-y-4 animate-unshow"
+                  ? "show"
+                  : "hidden"
               }`}
             >
               <div
