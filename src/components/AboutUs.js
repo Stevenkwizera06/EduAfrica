@@ -21,15 +21,16 @@ function AboutUs() {
             years.
           </p>
         </div>
-
+<div>
         <img
-          className="object-cover    w-[478px] h-[293px]"
+          className="object-cover   w-[478px] h-[293px]"
           alt=""
           src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6928-scaled.jpeg"
         />
+        </div>
       </div>
         <Wrapper>
-      <div className="grid grid-cols-2 p-16 gap-8">
+      <div className="grid lg:grid-cols-2 p-16 gap-8">
         <img
           className="object-contain"
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
@@ -37,7 +38,7 @@ function AboutUs() {
           />
         <div className="flex flex-col gap-4 ">
           <h1 className="flex  text-3xl font-bold">What we do</h1>
-          <p className="w-[470px] h-[192px]">
+          <p className="max-w-[470px] h-[192px]">
             The Children’s Foundation provides specialized treatment,
             counselling and attentive care to children, youth, and families with
             complex challenges through a variety of programs and services. Some
@@ -134,9 +135,9 @@ function AboutUs() {
         </div>
       </div>
       
-      <div className=" relative">
+      <div className=" relative bg-red-400">
         <img
-          className="object-cover w-full h-11/12  relative"
+          className="object-cover max-w-full lg:w-full h-11/12  relative"
           src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
           alt=""
         />
@@ -151,7 +152,7 @@ function AboutUs() {
                 We improve the lives of children and families with your support
               </p>
               <a
-                className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-pink-500"
+                className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-[#B42886]"
                 href=""
               >
                 DONATE

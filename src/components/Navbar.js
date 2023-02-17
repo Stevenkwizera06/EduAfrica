@@ -17,11 +17,11 @@ function Navbar() {
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className="relative max-w-[1426px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 px-20 lg:px-0 ">
+      <div className="relative max-w-[1426px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 lg:px-0 ">
         <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
-              className="h-[61px] max-w-[240px]"
+              className="h-[45px] lg:h-[61px] "
               src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
               alt=""
             />
@@ -95,8 +95,10 @@ function Navbar() {
               </div>
             </div>
           </div>
+        <DropDown />
+
           <a
-            className="bg-pink px-8 w-fit text-center text-white font-semibold py-4"
+            className="bg-pink px-4 lg:px-8 py-2 lg:py-4 w-fit text-center text-white font-semibold "
             href=""
           >
             Donate
@@ -114,7 +116,7 @@ function Navbar() {
             </span>
           </h4>
         </div>
-        <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 grid grid-cols-3 -mb-12">
+        <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 grid lg:grid-cols-3 ">
           <a
             className="px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
             href=""
