@@ -6,6 +6,7 @@ function AboutUs() {
   return (
     <div className="mt-20">
       {" "}
+<<<<<<< HEAD
       <Wrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 p-16 gap-8">
           <div className="flex flex-col gap-4">
@@ -28,6 +29,50 @@ function AboutUs() {
             />
           </div>
           <div>
+=======
+      <div className="grid lg:grid-cols-2 justify-center items-center max-w-[1024px] mx-auto space-x-20">
+        <div className="flex flex-col items-center gap-8 text-center">
+          <h1 className="text-3xl font-bold">Capital campaign program</h1>
+          <p className="text-start">
+            The Children’s Foundation is working to secure our future in Surrey.
+            Help us make sure that we are there for children and families for
+            years to come. Owning our facility out right will provide greater
+            predictability and control over our occupancy costs and help us
+            focus resources and energy on the services children, families, and
+            community need.
+          </p>
+          <p>
+            We need your help and support to raise $5,000,000 in the next 5
+            years.
+          </p>
+        </div>
+<div>
+        <img
+          className="object-cover   w-[478px] h-[293px]"
+          alt=""
+          src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6928-scaled.jpeg"
+        />
+        </div>
+      </div>
+        <Wrapper>
+      <div className="grid lg:grid-cols-2 p-16 gap-8">
+        <img
+          className="object-contain"
+            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
+            alt=""
+          />
+        <div className="flex flex-col gap-4 ">
+          <h1 className="flex  text-3xl font-bold">What we do</h1>
+          <p className="max-w-[470px] h-[192px]">
+            The Children’s Foundation provides specialized treatment,
+            counselling and attentive care to children, youth, and families with
+            complex challenges through a variety of programs and services. Some
+            of the challenges our clients face ranges from ASD, FASD, severe
+            social, emotional, and developmental disorders and disabilities, and
+            challenges that stem from a history of trauma, among many others.
+          </p>
+          <div className="flex  ">
+>>>>>>> 4e08802 (feat:adding responsiveness)
             <a
               className="px-10 text-white bg-[#2E8BC4] text-xl font-semibold py-4 bg-pink-500"
               href=""
@@ -117,9 +162,14 @@ function AboutUs() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className=" relative">
+=======
+      
+      <div className=" relative bg-red-400">
+>>>>>>> 4e08802 (feat:adding responsiveness)
         <img
-          className="object-cover w-full h-11/12  relative"
+          className="object-cover max-w-full lg:w-full h-11/12  relative"
           src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
           alt=""
         />
@@ -134,7 +184,7 @@ function AboutUs() {
                 We improve the lives of children and families with your support
               </p>
               <a
-                className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-pink-500"
+                className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-[#B42886]"
                 href=""
               >
                 DONATE
