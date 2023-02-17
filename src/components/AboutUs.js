@@ -135,7 +135,7 @@ function AboutUs() {
         </div>
       </div>
       
-      <div className=" relative bg-red-400">
+      <div className=" relative">
         <img
           className="object-cover max-w-full lg:w-full h-11/12  relative"
           src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
