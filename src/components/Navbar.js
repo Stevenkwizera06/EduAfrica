@@ -8,20 +8,20 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="h-screen relative">
+    <div className="h-max relative">
       <video
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[90%]"
+        className="absolute object-cover top-0 left-0 w-full h-[92.5%]"
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className="relative max-w-[1024px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 px-20 lg:px-0 ">
+      <div className="relative max-w-[1024px] mx-auto flex flex-col justify-items-start h-[92.5%] pt-6 px-20 lg:px-0 ">
         <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
-              className="h-[61px] max-w-[240px]"
+              className="h-[41px] max-w-[160px]"
               src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
               alt=""
             />
@@ -44,7 +44,7 @@ function Navbar() {
               className="hidden absolute md:group-hover:block mt-14"
               onMouseLeave={() => setActiveTab()}
             >
-              <div className="flex">
+              <div className="grid grid-cols-4 max-w-[592px] w-[592px]">
                 {items.map((item, index) => (
                   <ul
                     key={index}
@@ -52,7 +52,7 @@ function Navbar() {
                     className="flex text-white font-medium text-sm"
                   >
                     <li
-                      className={`${item.bgColor} w-full px-20 py-4 hover:cursor-default`}
+                      className={`${item.bgColor} w-full py-4 hover:cursor-default`}
                     >
                       <a href="#" className="hover:text-gray-400">
                         {item.title}
@@ -103,36 +103,38 @@ function Navbar() {
           </a>
         </div>
         <DropDown showMenu={showMenu} />
+        <div className="flex flex-col justify-between">
+          <div className="flex items-center justify-start md:w-[819px] mx-auto">
+            <h4 className="font-bold text-white text-[100px] leading-[99px]">
+              CHANGING <br /> LIVES <br />
+              <p className="-space-x-[0.2px]">
+                <span>EVERY</span>
+                <span className="text-brightYellow ">DAY</span>
+              </p>
+            </h4>
+          </div>
+          <div className="max-w-[1024px] mx-auto w-full gap-[17px] grid grid-cols-3 pt-24">
+            <a
+              className="px-14 text-white font-semibold text-center py-[35px] text-2xl bg-brightYellow "
+              href=""
+            >
+              Ways to give
+            </a>
 
-        <div className="flex items-center justify-start md:w-[819px] mx-auto">
-          <h4 className="font-bold text-white text-[100px] leading-[120px]">
-            CHANGING <br /> LIVES <br />
-            <span className="tracking">
-              EVERY <span className="text-brightYellow ">DAY</span>
-            </span>
-          </h4>
-        </div>
-        <div className="max-w-[1024px] mx-auto w-full gap-12 mt-8 grid grid-cols-3 -mb-12">
-          <a
-            className="px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
-            href=""
-          >
-            Ways to give
-          </a>
+            <a
+              className="px-14 text-white font-semibold  text-center py-[35px] text-2xl bg-darkBlue "
+              href=""
+            >
+              Our programme
+            </a>
 
-          <a
-            className="px-14 text-white font-semibold  text-center py-8 text-2xl bg-darkBlue "
-            href=""
-          >
-            Our programme
-          </a>
-
-          <a
-            className="px-14 text-white font-semibold  text-center py-8 text-2xl bg-pink "
-            href=""
-          >
-            Stories
-          </a>
+            <a
+              className="px-14 text-white font-semibold  text-center py-[35px] text-2xl bg-pink "
+              href=""
+            >
+              Stories
+            </a>
+          </div>
         </div>
       </div>
     </div>
