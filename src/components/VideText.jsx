@@ -10,13 +10,13 @@ const VideoText = () => {
     <Wrapper>
       <div className="max-w-6xl mx-auto mt-24 mb-24 flex flex-col 24 pl-">
         {/* First video text */}
-        <div className="flex flex-col gap-14 mb-14 flex-shrink max-w-[1080px]">
+        <div className="flex flex-col gap-14 mb-14 flex-shrink max-w-[1024px]">
           <h1 className="font-bold text-3xl opacity-80">
             Our impact on the community
           </h1>
           <div className="flex-shrink">
             <div
-              className={` max-w-[1080px] max-max-h-[608px] flex flex-col justify-center items-center ${
+              className={` max-w-[1024px] max-max-h-[608px] flex flex-col justify-center items-center ${
                 play === true ? "hidden transition-all 0s" : " block "
               }`}
             >
@@ -50,11 +50,11 @@ const VideoText = () => {
           </div>
         </div>
         {/* Second video text */}
-        <div className="flex flex-col gap-14 mb-14 flex-shrink max-w-[1080px]">
+        <div className="flex flex-col gap-14 mb-14 flex-shrink max-w-[1024px]">
           <h1 className="font-bold text-3xl opacity-80">Our Surrey Campus</h1>
-          <div className="flex-shrink max-w-[1080px] max-h-[608px]">
+          <div className="flex-shrink max-w-[1024px] max-h-[608px]">
             <div
-              className={`max-w-[1080px] max-h-[608px] flex flex-col justify-center items-center ${
+              className={`max-w-[1024px] max-h-[608px] flex flex-col justify-center items-center ${
                 playTwo === true ? "hidden transition-all 0s" : " block "
               }`}
             >

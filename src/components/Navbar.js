@@ -17,7 +17,7 @@ function Navbar() {
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className="relative max-w-[1426px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 px-20 lg:px-0 ">
+      <div className="relative max-w-[1024px] mx-auto flex flex-col justify-items-start justify-between h-[90%] pt-6 px-20 lg:px-0 ">
         <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
@@ -102,11 +102,9 @@ function Navbar() {
             Donate
           </a>
         </div>
-        <DropDown
-          showMenu={showMenu}
-        />
+        <DropDown showMenu={showMenu} />
 
-        <div className="flex items-center justify-start md:w-[1229px] mx-auto">
+        <div className="flex items-center justify-start md:w-[819px] mx-auto">
           <h4 className="font-bold text-white text-[100px] leading-[120px]">
             CHANGING <br /> LIVES <br />
             <span className="tracking">
@@ -114,7 +112,7 @@ function Navbar() {
             </span>
           </h4>
         </div>
-        <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 grid grid-cols-3 -mb-12">
+        <div className="max-w-[1024px] mx-auto w-full gap-12 mt-8 grid grid-cols-3 -mb-12">
           <a
             className="px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
             href=""
