@@ -68,13 +68,11 @@ function Navbar() {
                     style={{
                       backgroundColor: item.bgColor,
                     }}
-                    className={`flex ${
-                      item.title === "Learn More" ? "text-black" : "text-white"
-                    } font-semibold`}
+                    className={` flex`}
                   >
                     {activeTab === item.title
                       ? item.subItems.map((subItem, index) => (
-                          <div key={index} className={`${item.bgColor} w-full`}>
+                          <div key={index} className={`${item.bgColor} text-white w-full`}>
                             {subItem.title === "" ? (
                               <br />
                             ) : (
