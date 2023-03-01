@@ -13,11 +13,11 @@ function Navbar() {
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[92.5%]"
+        className="absolute object-cover top-0 left-0 w-full h-[95%]"
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className="relative max-w-[1024px] mx-auto flex flex-col justify-items-start h-[92.5%] pt-6 px-20 lg:px-0 ">
+      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-items-start h-[95%] px-20 lg:px-0 ">
         <div className="flex items-center w-full justify-between mx-auto py-6">
           <a href="">
             <img
@@ -72,7 +72,10 @@ function Navbar() {
                   >
                     {activeTab === item.title
                       ? item.subItems.map((subItem, index) => (
-                          <div key={index} className={`${item.bgColor} text-white w-full`}>
+                          <div
+                            key={index}
+                            className={`${item.bgColor} text-white w-full`}
+                          >
                             {subItem.title === "" ? (
                               <br />
                             ) : (
