@@ -8,17 +8,17 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="h-max relative">
+    <div className="h-screen relative ">
       <video
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[95%]"
+        className="absolute object-cover top-0 left-0 w-full h-[93%]"
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-items-start h-[95%] px-20 lg:px-0 ">
-        <div className="flex items-center w-full justify-between mx-auto py-6">
+      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[97.5%] px-20 lg:px-0 ">
+        <div className="flex  w-full  justify-between mx-auto h-fit pt-16">
           <a href="">
             <img
               className="h-[41px] max-w-[160px]"
@@ -28,13 +28,13 @@ function Navbar() {
           </a>
           <div className="group w-fit md:flex justify-center ">
             <a
-              className="px-10 hidden md:flex text-white cursor-pointer font-semibold py-4 bg-darkBlue "
+              className="px-10 hidden lg:flex text-white cursor-pointer font-semibold py-4 bg-darkBlue "
               href="#"
             >
               Menu
             </a>
             <FiMenu
-              className="md:hidden"
+              className="lg:hidden"
               size={30}
               color="fff"
               onClick={() => setShowMenu(!showMenu)}
@@ -104,39 +104,59 @@ function Navbar() {
           </a>
         </div>
         <DropDown showMenu={showMenu} />
-        <div className="flex flex-col justify-between">
-          <div className="flex items-center justify-start md:w-[819px] mx-auto">
-            <h4 className="font-bold text-white text-[100px] leading-[99px]">
-              CHANGING <br /> LIVES <br />
-              <p className="-space-x-[0.2px]">
-                <span>EVERY</span>
-                <span className="text-brightYellow ">DAY</span>
-              </p>
-            </h4>
-          </div>
-          <div className="max-w-[1024px] mx-auto w-full gap-[17px] grid grid-cols-3 pt-24">
-            <a
-              className="px-14 text-white font-semibold text-center py-[35px] text-2xl bg-brightYellow "
-              href=""
-            >
-              Ways to give
-            </a>
-
-            <a
-              className="px-14 text-white font-semibold  text-center py-[35px] text-2xl bg-darkBlue "
-              href=""
-            >
-              Our programme
-            </a>
-
-            <a
-              className="px-14 text-white font-semibold  text-center py-[35px] text-2xl bg-pink "
-              href=""
-            >
-              Stories
-            </a>
-          </div>
+        <div className="flex items-center justify-start md:w-[900px] mx-auto">
+          <h4 className="font-bold  text-white text-6xl lg:text-[90px] lg:leading-[99px]">
+            CHANGING <br /> LIVES <br />
+            <p className="-space-x-[0.2px]">
+              <span>EVERY</span>
+              <span className="text-brightYellow ">DAY</span>
+            </p>
+          </h4>
         </div>
+        <div className="max-w-[1024px] invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-24">
+          <a
+            className=" text-white font-semibold text-center py-[32px] text-2xl bg-brightYellow "
+            href=""
+          >
+            Ways to give
+          </a>
+
+          <a
+            className=" text-white font-semibold  text-center py-[32px] text-2xl bg-darkBlue "
+            href=""
+          >
+            Our programme
+          </a>
+
+          <a
+            className=" text-white font-semibold  text-center py-[32px] text-2xl bg-pink "
+            href=""
+          >
+            Stories
+          </a>
+        </div>
+      </div>
+      <div className="gap-[20px] w-fit mx-auto md:absolute lg:hidden -mt-6 md:left-[25%] md:right-[25%] -bottom-[17.5%] flex flex-col md:pt-24">
+        <a
+          className=" text-white font-semibold text-center py-[28px] text-2xl bg-brightYellow px-10"
+          href=""
+        >
+          Ways to give
+        </a>
+
+        <a
+          className=" text-white font-semibold  text-center py-[28px] text-2xl bg-darkBlue px-10"
+          href=""
+        >
+          Our programme
+        </a>
+
+        <a
+          className=" text-white font-semibold  text-center py-[28px] text-2xl bg-pink px-10"
+          href=""
+        >
+          Stories
+        </a>
       </div>
     </div>
   );

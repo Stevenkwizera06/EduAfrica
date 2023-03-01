@@ -5,11 +5,11 @@ import VideoText from "@/components/VideoText";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <AboutUs />
       <VideoText />
       <Footer />
-    </>
+    </div>
   );
 }
