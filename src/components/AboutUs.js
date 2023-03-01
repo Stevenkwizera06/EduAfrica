@@ -53,7 +53,7 @@ function AboutUs() {
           families. Since that time, The Children’s Foundation has helped
           thousands of vulnerable children and their families to better lives.
         </p>
-        <div className="grid lg:grid-cols-2 mt-4">
+        <div className="grid lg:grid-cols-2 mt-4 ">
           <img
             className="object-cover h-full"
             alt=""
@@ -79,11 +79,49 @@ function AboutUs() {
           </div>
         </div>
       </Wrapper>
-      <div className=" bg-[#2e8bc4] mt-8 -mb-8 h-[600px]">
-        <div className="max-w-[1024px] mx-auto grid lg:grid-cols-2 justify-center items-center text-center">
+      <Wrapper>
+        <div className=" bg-[#2e8bc4] mt-8 -mb-8 h-[600px]">
+          <div className="max-w-[1080px] mx-auto grid lg:grid-cols-2 gap-8 justify-center items-center">
+            <img
+              className="mt-12"
+              src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo-01-1.png"
+              alt=""
+            />
+            <div className="text-white flex flex-col gap-6 items-start   mt-28 ">
+              <h1 className="text-3xl font-bold">
+                Get updates straight to your inbox
+              </h1>
+              <p className="self-start">
+                Sign up to get updates and stay current on what’s happening at
+                the Children’s Foundation.
+              </p>
+              <p className="text-lg font-semibold ">Email Address *</p>
+              <input
+                className="w-[90%] p-2 placeholder:text-white bg-transparent placeholder:text-lg border-2 border-gray-200 focus:outline-none"
+                placeholder="what is your email"
+              />
+              <div className="flex justify-center ">
+                <a
+                  className="text-white  bg-[#B42886] border-[1.6px] text-[20px] font-[500] leading-[32px] px-[35px] mr-5px] mb-[10px] border-none h-[50px] inline-flex items-center justify-center"
+                  href=""
+                >
+                  Subscribe
+                </a>
+              </div>
+              <p className="text-[14px] font-[300] leading-[28.8px]">
+                By submitting this form you are granting The Children’s
+                Foundation permission to email you. You may unsubscribe via the
+                link found at the bottom of every email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Wrapper>
+      <Wrapper>
+        <div className=" relative">
           <img
-            className="mt-12"
-            src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo-01-1.png"
+            className="object-cover max-w-full lg:w-full h-11/12  relative"
+            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
             alt=""
           />
           <div className="text-white flex flex-col gap-6 items-start justify-center text-center mt-28 px-6">
@@ -116,33 +154,35 @@ function AboutUs() {
             </p>
           </div>
         </div>
-      </div>
-      <div className=" relative">
-        <img
-          className="object-cover max-w-full lg:w-full h-11/12  relative"
-          src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
-          alt=""
-        />
+        {/* </div> */}
+        <div className=" relative">
+          <img
+            className="object-cover max-w-full lg:w-full h-11/12  relative"
+            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
+            alt=""
+          />
 
-        <div className="flex justify-center mb-8">
-          <div
-            className="px-8  text-white font-semibold -mt-24 text-center py-8 text-xl bg-[#072951] w-[504px] h-[238px] relative z-40"
-            href=""
-          >
-            <div className="flex flex-col">
-              <p>
-                We improve the lives of children and families with your support
-              </p>
-              <a
-                className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-[#B42886]"
-                href=""
-              >
-                DONATE
-              </a>
+          <div className="flex justify-center mb-8">
+            <div
+              className="px-8  text-white font-semibold -mt-24 text-center py-8 text-xl bg-[#072951] w-[504px] h-[238px] relative z-40"
+              href=""
+            >
+              <div className="flex flex-col">
+                <p>
+                  We improve the lives of children and families with your
+                  support
+                </p>
+                <a
+                  className="px-8 w-36 justify-center ml-36 mt-10  text-white font-semibold py-4 bg-[#B42886]"
+                  href=""
+                >
+                  DONATE
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Wrapper>
     </div>
   );
 }
