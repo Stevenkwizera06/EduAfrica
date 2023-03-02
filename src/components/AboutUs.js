@@ -1,38 +1,42 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Wrapper from "./Wrapper";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="mt-20">
       {" "}
-        <Wrapper>
-      <div className="grid grid-cols-2 p-16 gap-8">
-        <div className="flex flex-col gap-4 ">
-          <h1 className="flex  text-3xl font-bold">What we do</h1>
-          <p className="w-[470px] h-[192px]">
-            The Children’s Foundation provides specialized treatment,
-            counselling and attentive care to children, youth, and families with
-            complex challenges through a variety of programs and services. Some
-            of the challenges our clients face ranges from ASD, FASD, severe
-            social, emotional, and developmental disorders and disabilities, and
-            challenges that stem from a history of trauma, among many others.
-          </p>
-          <div className="flex  ">
-            <a
-              className="px-8 text-white font-semibold py-4 bg-pink-500"
-              href=""
-            >
-              DONATE
-            </a>
+      <Wrapper>
+        <div className="grid grid-cols-1 md:grid-cols-2 p-16 gap-8">
+          <div className="flex flex-col gap-4">
+            <h1 className="flex text-3xl font-bold">What we do</h1>
+            <p className="">
+              The Children’s Foundation provides specialized treatment,
+              counselling and attentive care to children, youth, and families
+              with complex challenges through a variety of programs and
+              services. Some of the challenges our clients face ranges from ASD,
+              FASD, severe social, emotional, and developmental disorders and
+              disabilities, and challenges that stem from a history of trauma,
+              among many others.
+            </p>
           </div>
-        </div>
+          <div>
           <img
-          className="object-contain"
+            className=""
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
             alt=""
           />
-      </div>
-        </Wrapper>
+          </div>
+          <div>
+            <a
+              className="px-10 text-white bg-[#2E8BC4] text-xl font-semibold py-4 bg-pink-500"
+              href=""
+            >
+              See more
+            </a>
+          </div>
+        </div>
+      </Wrapper>
       <Wrapper>
         <h1 className="text-[30px] font-[700] leading-[36px] text-[##2e2e2e] max-w-[980px] px-[10px]  text-center">
           The Children’s Foundation has helped thousands of children since 1957
@@ -51,18 +55,22 @@ function AboutUs() {
         </p>
         <div className="grid lg:grid-cols-2 mt-4">
           <img
-            className="object-cover"
+            className="object-cover h-full"
             alt=""
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6977-scaled.jpeg"
           />
           <div className="flex flex-col items-center text-center gap-6 bg-[#ecdc01] p-[30px]">
-            <h1 className="text-5xl text-[#2e2e2e] text-[30px] font-[700] leading-[36px] text-center font-bold py-2.5">Our mission</h1>
+            <h1 className="text-5xl text-[#2e2e2e] text-[30px] leading-[36px] text-center font-bold py-2.5">
+              Our mission
+            </h1>
             <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
               Improving lives by helping children and their families navigate
-              complex challenges. 
+              complex challenges.
             </p>
             <div className="w-[70%] h-[1px] bg-[#2e2e2e]" />
-            <h1 className="text-5xl text-[#2e2e2e] text-[30px] font-[700] leading-[36px] text-center font-bold">Our vision</h1>
+            <h1 className="text-5xl text-[#2e2e2e] text-[30px] leading-[36px] text-center font-bold">
+              Our vision
+            </h1>
             <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
               Communities in which each child has the opportunity for optimum
               growth and development, and each family is able to provide the
@@ -159,10 +167,6 @@ function AboutUs() {
         </div>
       </div>
     </div>
-
-
-
-
   );
 }
 
