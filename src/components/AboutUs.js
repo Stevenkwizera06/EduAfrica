@@ -115,8 +115,8 @@ function AboutUs() {
       <div className=" bg-[#2e8bc4] mt-8 lg:-mb-8 min-h-[600px] px-2">
         <div className="max-w-[1080px] mx-auto grid lg:grid-cols-2 gap-8 justify-center items-center">
           <img
-            className="mt-12"
-            src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo-01-1.png"
+            className="object-cover max-w-full lg:w-full h-11/12  relative"
+            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
             alt=""
           />
           <div className="text-white flex flex-col gap-6 items-start   mt-28 ">

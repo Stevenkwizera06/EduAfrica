@@ -121,7 +121,7 @@ function Navbar() {
               </span>
             </h4>
           </div>
-          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 bg-green-300 invisible md:visible  md:grid lg:grid-cols-3 ">
+          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8  invisible md:visible  md:grid lg:grid-cols-3 ">
             <a
               className="lg:px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
               href=""
