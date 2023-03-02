@@ -9,7 +9,7 @@ const items = [
         },
         contents: [
           {
-            name: "Alderwood Family Development Centre",
+            name: "Alderwood Family  Centre",
             href: "https://childrens-foundation.org/program/alderwood-family-development-centre/",
           },
           {
@@ -17,11 +17,7 @@ const items = [
             href: "https://childrens-foundation.org/program/paths-at-cindrich/",
           },
           {
-            name: "Cedarwood Family Program Support and Services",
-            href: "https://childrens-foundation.org/program/cedarwood-family-program-support-and-services/",
-          },
-          {
-            name: "Cedarwood Family Program Support and Services",
+            name: "Cedarwood Family and Services",
             href: "https://childrens-foundation.org/program/cedarwood-family-program-support-and-services/",
           },
         ],
@@ -36,19 +32,6 @@ const items = [
           {
             name: "Surrey Family Preservation Program",
             href: "https://childrens-foundation.org/program/surrey-family-preservation-program/",
-          },
-        ],
-      },
-      {
-        title: "",
-        contents: [
-          {
-            name: "Respite Program",
-            href: "https://childrens-foundation.org/program/respite-program/",
-          },
-          {
-            name: "Thetis Program",
-            href: "https://childrens-foundation.org/program/thetis-program/",
           },
         ],
       },
