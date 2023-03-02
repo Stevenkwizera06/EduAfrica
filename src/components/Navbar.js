@@ -49,10 +49,10 @@ function Navbar() {
                   <ul
                     key={index}
                     onMouseEnter={() => setActiveTab(item.title)}
-                    className="flex text-white font-medium text-sm"
+                    className={`flex ${item.title === 'Learn More'? 'text-black': 'text-white' } font-medium text-sm`}
                   >
                     <li
-                      className={`${item.bgColor} w-full py-4 hover:cursor-default`}
+                      className={`${item.bgColor} w-full py-4 text-center hover:cursor-default`}
                     >
                       <a href="#" className="hover:text-gray-400">
                         {item.title}
@@ -68,13 +68,13 @@ function Navbar() {
                     style={{
                       backgroundColor: item.bgColor,
                     }}
-                    className={` flex`}
+                    className={`flex`}
                   >
                     {activeTab === item.title
                       ? item.subItems.map((subItem, index) => (
                           <div
                             key={index}
-                            className={`${item.bgColor} text-white w-full`}
+                            className={`${item.bgColor} ${item.title === 'Learn More'? 'text-black': 'text-white' } w-full pl-5`}
                           >
                             {subItem.title === "" ? (
                               <br />
