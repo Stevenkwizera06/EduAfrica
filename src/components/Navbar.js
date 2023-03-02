@@ -8,16 +8,16 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="h-screen relative ">
+    <div className="h-screen relative">
       <video
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[90%] lg:h-[93%] "
+        className="absolute object-cover top-0 left-0 w-full h-[90%] lg:h-[91%] "
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[97.5%] px-6 lg:px-0 ">
+      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[90%] lg:h-[91%] px-6 lg:px-0 ">
         <div className="flex w-full justify-between mx-auto h-fit pt-8 lg:pt-16">
           <a href="">
             <img
@@ -112,7 +112,7 @@ function Navbar() {
             </p>
           </h4>
         </div>
-        <div className="max-w-[1024px] invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-60 lg:pt-24">
+        <div className="max-w-[1024px] -mb-12 invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-60 lg:pt-24">
           <a
             className=" text-white font-semibold text-center py-[32px] text-2xl bg-brightYellow "
             href=""
