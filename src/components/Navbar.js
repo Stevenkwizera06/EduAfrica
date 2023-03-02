@@ -13,12 +13,12 @@ function Navbar() {
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[93%]"
+        className="absolute object-cover top-0 left-0 w-full h-[90%] lg:h-[93%] "
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
 
-      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[97.5%] px-20 lg:px-0 ">
-        <div className="flex  w-full  justify-between mx-auto h-fit pt-16">
+      <div className=" relative max-w-[1024px] mx-auto gap-12 flex flex-col justify-between justify-items-start h-[97.5%] px-6 lg:px-0 ">
+        <div className="flex w-full justify-between mx-auto h-fit pt-8 lg:pt-16">
           <a href="">
             <img
               className="h-[41px] max-w-[160px]"
@@ -26,7 +26,7 @@ function Navbar() {
               alt=""
             />
           </a>
-          <div className="group w-fit md:flex justify-center ">
+          <div className="group w-fit items-center md:flex justify-center ">
             <a
               className="px-10 hidden lg:flex text-white cursor-pointer font-semibold py-4 bg-darkBlue "
               href="#"
@@ -34,8 +34,7 @@ function Navbar() {
               Menu
             </a>
             <FiMenu
-              className="lg:hidden"
-              size={30}
+              className="w-7 h-7 lg:w-12 lg:h-12 lg:hidden "
               color="fff"
               onClick={() => setShowMenu(!showMenu)}
             />
@@ -49,10 +48,10 @@ function Navbar() {
                   <ul
                     key={index}
                     onMouseEnter={() => setActiveTab(item.title)}
-                    className={`flex ${item.title === 'Learn More'? 'text-black': 'text-white' } font-medium text-sm`}
+                    className="flex text-white font-medium text-sm"
                   >
                     <li
-                      className={`${item.bgColor} w-full py-4 text-center hover:cursor-default`}
+                      className={`${item.bgColor} w-full py-4 hover:cursor-default`}
                     >
                       <a href="#" className="hover:text-gray-400">
                         {item.title}
@@ -68,13 +67,13 @@ function Navbar() {
                     style={{
                       backgroundColor: item.bgColor,
                     }}
-                    className={`flex`}
+                    className={` flex`}
                   >
                     {activeTab === item.title
                       ? item.subItems.map((subItem, index) => (
                           <div
                             key={index}
-                            className={`${item.bgColor} ${item.title === 'Learn More'? 'text-black': 'text-white' } w-full pl-5`}
+                            className={`${item.bgColor} text-white w-full`}
                           >
                             {subItem.title === "" ? (
                               <br />
@@ -97,15 +96,15 @@ function Navbar() {
             </div>
           </div>
           <a
-            className="bg-pink px-8 w-fit text-center text-white font-semibold py-4"
+            className="bg-pink px-8 w-fit text-center text-white font-semibold py-2 lg:py-4"
             href=""
           >
             Donate
           </a>
         </div>
         <DropDown showMenu={showMenu} />
-        <div className="flex items-center justify-start md:w-[900px] mx-auto">
-          <h4 className="font-bold  text-white text-6xl lg:text-[90px] lg:leading-[99px]">
+        <div className="flex items-center justify-start md:w-[900px] px-16 lg:mx-auto">
+          <h4 className="font-bold  text-white text-5xl md:text-6xl lg:text-[90px] lg:leading-[99px]">
             CHANGING <br /> LIVES <br />
             <p className="-space-x-[0.2px]">
               <span>EVERY</span>
@@ -113,7 +112,7 @@ function Navbar() {
             </p>
           </h4>
         </div>
-        <div className="max-w-[1024px] invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-24">
+        <div className="max-w-[1024px] invisible lg:visible  mx-auto w-full gap-[34px] grid grid-cols-3 pt-60 lg:pt-24">
           <a
             className=" text-white font-semibold text-center py-[32px] text-2xl bg-brightYellow "
             href=""
@@ -135,28 +134,6 @@ function Navbar() {
             Stories
           </a>
         </div>
-      </div>
-      <div className="gap-[20px] w-fit mx-auto md:absolute lg:hidden -mt-6 md:left-[25%] md:right-[25%] -bottom-[17.5%] flex flex-col md:pt-24">
-        <a
-          className=" text-white font-semibold text-center py-[28px] text-2xl bg-brightYellow px-10"
-          href=""
-        >
-          Ways to give
-        </a>
-
-        <a
-          className=" text-white font-semibold  text-center py-[28px] text-2xl bg-darkBlue px-10"
-          href=""
-        >
-          Our programme
-        </a>
-
-        <a
-          className=" text-white font-semibold  text-center py-[28px] text-2xl bg-pink px-10"
-          href=""
-        >
-          Stories
-        </a>
       </div>
     </div>
   );
