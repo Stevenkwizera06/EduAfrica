@@ -6,6 +6,7 @@ import Wrapper from "./Wrapper";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
+  const [activeSubTab, setActiveSubTab] = useState();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -22,7 +23,7 @@ function Navbar() {
           <div className="flex items-center w-full justify-between mx-auto py-6">
             <a href="">
               <img
-                className="h-[45px] lg:h-[61px] "
+                className="h-[45px] lg:h-[61px]"
                 src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
                 alt=""
               />
@@ -43,7 +44,7 @@ function Navbar() {
 
               <div
                 className="hidden absolute md:group-hover:block mt-14"
-                onMouseLeave={() => setActiveTab()}
+                onMouseLeave={setActiveTab}
               >
                 <div className="flex">
                   {items.map((item, index) => (
@@ -69,30 +70,28 @@ function Navbar() {
                       style={{
                         backgroundColor: item.bgColor,
                       }}
-                      className={`flex ${
-                        item.title === "Learn More"
-                          ? "text-black"
-                          : "text-white"
-                      } font-semibold`}
+                      className={`font-semibold text-white gap-y-5`}
                     >
                       {activeTab === item.title
                         ? item.subItems.map((subItem, index) => (
                             <div
                               key={index}
-                              className={`${item.bgColor} w-full`}
+                              className={`${item.bgColor} w-full pl-5 cursor-pointer`}
                             >
-                              {subItem.title === "" ? (
-                                <br />
+                              <span
+                                onMouseEnter={() =>
+                                  setActiveSubTab(subItem.title)
+                                }
+                                onMouseLeave={setActiveSubTab}
+                              >
+                                {subItem.title}
+                              </span>
+
+                              {activeSubTab === subItem.title ? (
+                                <p>{subItem.contents}</p>
                               ) : (
-                                <a href={subItem.title.href}>
-                                  {subItem.title.name}
-                                </a>
+                                ""
                               )}
-                              {subItem.contents.map((content, index) => (
-                                <div key={index}>
-                                  <a href={content.href}>{content.name}</a>
-                                </div>
-                              ))}
                             </div>
                           ))
                         : ""}
