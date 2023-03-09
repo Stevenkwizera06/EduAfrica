@@ -1,15 +1,22 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import items from "@/data/menuItems";
 import DropDown from "./DropDown";
 import { FiMenu } from "react-icons/fi";
 import Wrapper from "./Wrapper";
+import logo1 from "../Images/Africa 1.png"
+import logo2 from "../Images/edu.png";
+import logo4 from "../Images/Edu africa 1.png";
+import logo5 from "../Images/Edu africa.png";
+import logo6 from "../Images/Edu africa (1).png";
+import logo7 from "../Images/Edu africa 1 (1).png";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative ">
       <video
         loop
         autoPlay
@@ -21,11 +28,19 @@ function Navbar() {
         <div className="relative mx-auto flex flex-col justify-items-start justify-between  pt-6 lg:px-0 ">
           <div className="flex items-center w-full justify-between mx-auto py-6">
             <a href="">
-              <img
-                className="h-[45px] lg:h-[61px] "
-                src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
-                alt=""
+              <Image
+                className="h-[45px] w-12 lg:h-[200px] lg:w-[200px] hidden md:block"
+                src={logo6}
               />
+              <Image
+                className="h-[45px] w-12 block md:hidden"
+                src={logo7}
+              />
+              {/* <img
+                className="h-[45px] lg:h-[61px] bg-red-600"
+                src={logo2}
+                alt=""
+              /> */}
             </a>
             <div className="group w-fit md:flex justify-center ">
               <a
@@ -113,14 +128,14 @@ function Navbar() {
           </div>
           <DropDown showMenu={showMenu} />
 
-          <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
+          {/* <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
             <h4 className="font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
               CHANGING <br /> LIVES <br />
               <span className="tracking">
                 EVERY <span className="text-brightYellow ">DAY</span>
               </span>
             </h4>
-          </div>
+          </div> */}
           <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8  invisible md:visible  md:grid lg:grid-cols-3 ">
             <a
               className="lg:px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
