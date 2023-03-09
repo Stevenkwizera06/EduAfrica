@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FiMenu } from "react-icons/fi";
 import { IoIosClose, IoIosAdd } from "react-icons/io";
 import items from "@/data/menuItems";
 

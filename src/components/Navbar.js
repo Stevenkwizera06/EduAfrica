@@ -35,12 +35,6 @@ function Navbar() {
               >
                 Menu
               </a>
-              <FiMenu
-                className="md:hidden"
-                size={30}
-                color="fff"
-                onClick={() => setShowMenu(!showMenu)}
-              />
 
               <div
                 className="hidden absolute md:group-hover:block mt-14"
@@ -96,10 +90,16 @@ function Navbar() {
                   ))}
                 </div>
               </div>
+            <DropDown showMenu={showMenu}/>
+
             </div>
-
-            <DropDown />
-
+            
+            <FiMenu
+                className="md:hidden"
+                size={30}
+                color="fff"
+                onClick={() => setShowMenu(!showMenu)}
+              />
             <a
               className="bg-pink px-4 lg:px-8 py-2 lg:py-4 w-fit text-center text-white font-semibold "
               href=""
@@ -107,7 +107,6 @@ function Navbar() {
               Donate
             </a>
           </div>
-          <DropDown showMenu={showMenu} />
 
           <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
             <h4 className="font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
