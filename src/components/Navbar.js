@@ -79,10 +79,7 @@ function Navbar() {
                               className={`${item.bgColor} w-full pl-5 cursor-pointer`}
                             >
                               <span
-                                onMouseEnter={() =>
-                                  setActiveSubTab(subItem.title)
-                                }
-                                onMouseLeave={setActiveSubTab}
+                                onClick={() => setActiveSubTab(subItem.title)}
                               >
                                 {subItem.title}
                               </span>
