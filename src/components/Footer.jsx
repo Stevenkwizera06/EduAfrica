@@ -1,25 +1,33 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import Link from "next/link";
+import Image from "next/image";
 import { ImLinkedin2 } from "react-icons/im";
 import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
+import logo1 from "../Images/Africa 1.png";
+import logo2 from "../Images/edu.png";
+import logo4 from "../Images/Edu africa 1.png";
+import logo5 from "../Images/Edu africa.png";
+import logo6 from "../Images/Edu africa (1).png";
+import logo7 from "../Images/Edu africa 1 (1).png";
 
 const Footer = () => {
   return (
     <div className="bg-[#072951] text-white pb-8 pt-20">
       <Wrapper style="">
         <div className="grid lg:grid-cols-3 gap-10">
-          <img
+          {/* <img
             className="self-center object-cover"
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo-01-1.png"
             alt=""
-          />
+          /> */}
+          <Image src={logo7} alt=""/>
           <div>
             <div>
               <h2 className="text-[20px] font-[700] leading-[24px] text-left py-[10px]">
-                Surrey Office
+                Kigali Office
               </h2>
               <div className="py-[10px]">
                 <p className="font-[500] leading-[28.8px] text-left">
@@ -68,6 +76,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
+            
             <div>
               <h2 className="text-[20px] font-[700] leading-[24px] text-left pt-[40px]">
                 Office Hours
@@ -111,10 +120,7 @@ const Footer = () => {
               </Link>
             </li>
           ))}
-        </ul>
-        <p className="font-[500] leading-[28.8px]  py-4 text-center">
-          Designed by Burst Creative Group
-        </p>
+        </ul>        
       </Wrapper>
     </div>
   );
