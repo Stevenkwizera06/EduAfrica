@@ -5,8 +5,8 @@ import items from "@/data/menuItems";
 import DropDown from "./DropDown";
 import { FiMenu } from "react-icons/fi";
 import Wrapper from "./Wrapper";
-import logo6 from "../Images/Edu africa (1).png";
-import logo7 from "../Images/Edu africa 1 (1).png";
+import logo6 from "../Images/EduAfrica1.png";
+import logo7 from "../Images/EduAfrica2.png";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();

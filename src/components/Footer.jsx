@@ -7,7 +7,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 
-import logo7 from "../Images/Edu africa 1 (1).png";
+import logo7 from "../Images/EduAfrica2.png";
 
 const Footer = () => {
   return (
