@@ -8,8 +8,8 @@ const DropDown = ({ showMenu }) => {
 
   return (
     <>
-      <div className="flex w-full md:hidden justify-center text-white">
-        <div className="md:flex absolute w-full mt-14">
+      <div className="flex w-full md:hidden  justify-center text-white">
+        <div className="md:flex absolute w-full mt-14 ">
           {items.map((item, index) => (
             <div key={index} className={` ${showMenu ? "show" : "hidden"}`}>
               <div

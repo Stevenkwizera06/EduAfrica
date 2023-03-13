@@ -13,7 +13,7 @@ const items = [
       {
         title: "Values",
         contents:
-          "EduAfrica values the power of education and mentorship and it’s role in supporting "
+          "EduAfrica values the power of education and mentorship and it’s role in supporting ",
       },
     ],
     bgColor: "bg-[#B42886]",
@@ -23,7 +23,7 @@ const items = [
     subItems: [
       {
         title: "Education Opportunity",
-        contents: `The provision Of Scholarship`
+        contents: `The provision Of Scholarship`,
       },
       {
         title: "Mentorship",
@@ -38,7 +38,12 @@ const items = [
   },
   {
     title: "Purpose of activity",
-    subItems: [{ title: "", content: "" }],
+    subItems: [
+      {
+        title: "In Rwanda our purpose is to reduce poverty by providing access to education for vulnerable Rwandan youth through Vocational schools and education advocacy. Our current Rwandan volunteer Rugazora Sanyu Patience, Country Director is a Lawyer in training and former Afflatus Country Coordinator. She combines her studies with volunteering with EduAfrica to administer these programs taking place in Rwanda. EduAfrica in Canada collect raised funds and send it to Ms Rugazora where by she distributes funds to the different institutions.",
+        content: "In Rwanda our purpose is to reduce poverty by providing access to education for vulnerable Rwandan youth through Vocational schools and education advocacy. Our current Rwandan volunteer Rugazora Sanyu Patience, Country Director is a Lawyer in training and former Afflatus Country Coordinator. She combines her studies with volunteering with EduAfrica to administer these programs taking place in Rwanda. EduAfrica in Canada collect raised funds and send it to Ms Rugazora where by she distributes funds to the different institutions."
+      },
+    ],
     bgColor: "bg-yellow-700",
   },
 ];
