@@ -28,14 +28,16 @@ function Navbar() {
       ></video>
       <Wrapper>
         <div className="relative mx-auto flex flex-col justify-items-start justify-between  pt-6 lg:px-0 ">
-          <div className="flex items-center w-full justify-between mx-auto py-6">
+          <div className="flex items-center w-full justify-between mx-auto py-6 ">
             <a href="">
-              <Image
+              <Image 
+              alt=""
                 className="h-[45px] w-12 lg:h-[200px] lg:w-[200px] hidden md:block"
                 src={logo6}
               />
-              <Image
-                className="h-[45px] w-12 block md:hidden"
+              <Image 
+              alt=""
+                className=" w-24 h-24 block md:hidden"
                 src={logo7}
               />
               {/* <img
@@ -124,14 +126,14 @@ function Navbar() {
             </a>
           </div>
 
-          {/* <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
+          <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
             <h4 className="font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
               CHANGING <br /> LIVES <br />
               <span className="tracking">
                 EVERY <span className="text-brightYellow ">DAY</span>
               </span>
             </h4>
-          </div> */}
+          </div>
           <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8  invisible md:visible  md:grid lg:grid-cols-3 ">
             <a
               className="lg:px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "

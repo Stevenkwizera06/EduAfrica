@@ -3,7 +3,7 @@ import React from "react";
 const GridMenu = () => {
   return (
     <div>
-      <div className="gap-[20px] -mt-20 w-fit mx-auto lg:hidden flex flex-col">
+      <div className="gap-[20px]  w-fit mx-auto lg:hidden flex flex-col">
         <a
           className=" text-white font-semibold text-center py-[28px] text-2xl bg-brightYellow px-10"
           href=""
