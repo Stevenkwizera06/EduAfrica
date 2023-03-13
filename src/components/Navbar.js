@@ -5,10 +5,6 @@ import items from "@/data/menuItems";
 import DropDown from "./DropDown";
 import { FiMenu } from "react-icons/fi";
 import Wrapper from "./Wrapper";
-import logo1 from "../Images/Africa 1.png"
-import logo2 from "../Images/edu.png";
-import logo4 from "../Images/Edu africa 1.png";
-import logo5 from "../Images/Edu africa.png";
 import logo6 from "../Images/Edu africa (1).png";
 import logo7 from "../Images/Edu africa 1 (1).png";
 

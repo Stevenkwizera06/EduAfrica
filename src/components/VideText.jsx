@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
 import Wrapper from "./Wrapper";
+import cheif from "../Images/chief.jpeg";
+import cheif2 from "../Images/chief2.jpeg";
+
 
 const VideoText = () => {
   let [play, setPlay] = useState(false);
@@ -20,10 +24,8 @@ const VideoText = () => {
                 play === true ? "hidden transition-all 0s" : " block "
               }`}
             >
-              <img
-                src="https://i.ytimg.com/vi/eVlnSDb_knk/maxresdefault.jpg"
-                alt="bg"
-              />
+             
+              <Image alt="" src={cheif} />
               <button
                 className={`border-[6px] absolute border-gray-300 opacity-60 w-24 h-24 rounded-full flex justify-center items-center `}
                 onClick={() => {
@@ -59,10 +61,8 @@ const VideoText = () => {
               }`}
             >
               {" "}
-              <img
-                src="https://childrens-foundation.org/wp-content/uploads/2023/02/Screen-Shot-2023-02-02-at-13.25.05.png"
-                alt=""
-              />
+              
+              <Image alt="" src={cheif2} />
               <button
                 className={`border-[6px] absolute border-gray-300 opacity-60 w-24 h-24 rounded-full flex justify-center items-center  `}
                 onClick={() => {
