@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import Image from "next/image";
 import items from "@/data/menuItems";
@@ -13,6 +14,7 @@ import logo7 from "../Images/Edu africa 1 (1).png";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
+  const [activeSubTab, setActiveSubTab] = useState();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -49,16 +51,10 @@ function Navbar() {
               >
                 Menu
               </a>
-              <FiMenu
-                className="md:hidden"
-                size={30}
-                color="fff"
-                onClick={() => setShowMenu(!showMenu)}
-              />
 
               <div
                 className="hidden absolute md:group-hover:block mt-14"
-                onMouseLeave={() => setActiveTab()}
+                onMouseLeave={setActiveTab}
               >
                 <div className="flex">
                   {items.map((item, index) => (
@@ -84,30 +80,25 @@ function Navbar() {
                       style={{
                         backgroundColor: item.bgColor,
                       }}
-                      className={`flex ${
-                        item.title === "Learn More"
-                          ? "text-black"
-                          : "text-white"
-                      } font-semibold`}
+                      className={`font-semibold text-white gap-y-5`}
                     >
                       {activeTab === item.title
                         ? item.subItems.map((subItem, index) => (
                             <div
                               key={index}
-                              className={`${item.bgColor} w-full`}
+                              className={`${item.bgColor} w-full pl-5 cursor-pointer`}
                             >
-                              {subItem.title === "" ? (
-                                <br />
+                              <span
+                                onClick={() => setActiveSubTab(subItem.title)}
+                              >
+                                {subItem.title}
+                              </span>
+
+                              {activeSubTab === subItem.title ? (
+                                <p>{subItem.contents}</p>
                               ) : (
-                                <a href={subItem.title.href}>
-                                  {subItem.title.name}
-                                </a>
+                                ""
                               )}
-                              {subItem.contents.map((content, index) => (
-                                <div key={index}>
-                                  <a href={content.href}>{content.name}</a>
-                                </div>
-                              ))}
                             </div>
                           ))
                         : ""}
@@ -115,10 +106,16 @@ function Navbar() {
                   ))}
                 </div>
               </div>
+            <DropDown showMenu={showMenu}/>
+
             </div>
-
-            <DropDown />
-
+            
+            <FiMenu
+                className="md:hidden"
+                size={30}
+                color="fff"
+                onClick={() => setShowMenu(!showMenu)}
+              />
             <a
               className="bg-pink px-4 lg:px-8 py-2 lg:py-4 w-fit text-center text-white font-semibold "
               href=""
@@ -126,7 +123,6 @@ function Navbar() {
               Donate
             </a>
           </div>
-          <DropDown showMenu={showMenu} />
 
           {/* <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
             <h4 className="font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
