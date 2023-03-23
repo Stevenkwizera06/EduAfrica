@@ -97,7 +97,7 @@ function AboutUs() {
             </p>
             <div className="w-[70%] h-[1px] bg-[#2e2e2e]" />
             <h1 className="text-5xl text-[#2e2e2e] text-[30px] leading-[36px] text-center font-bold">
-              Our mission
+              Our vision
             </h1>
             <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
               We envision communities where every child has the opportunity to

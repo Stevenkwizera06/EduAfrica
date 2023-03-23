@@ -14,7 +14,7 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full relative ">
+    <div className="w-full relative">
       <video
         loop
         autoPlay
@@ -28,12 +28,12 @@ function Navbar() {
             <a href="">
               <Image 
               alt=""
-                className="h-[45px] w-12 lg:h-[200px] lg:w-[200px] hidden md:block"
+                className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] hidden md:block"
                 src={logo6}
               />
               <Image 
               alt=""
-                className=" w-24 h-24 block md:hidden"
+                className=" w-44 h-32  block md:hidden"
                 src={logo7}
               />
               {/* <img

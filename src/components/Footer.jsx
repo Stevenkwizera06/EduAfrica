@@ -11,7 +11,7 @@ import logo7 from "../Images/EduAfrica2.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#072951] text-white pb-8 pt-20">
+    <div className="bg-[#05ad21] text-white pb-8 pt-20">
       <Wrapper style="">
         <div className="grid lg:grid-cols-3 gap-10">
          
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
         <p className="text-[14px] leading-[28.8px] font-[500] text-center py-10">
           {
-            "The Children’s Foundation is located on the traditional and unceded territories of the Musqueam (xʷməθkʷəy̓əm), Squamish (Sḵwx̱wú7meshÚxwumixw), Tsleil-Waututh (səl̓ilw̓ətaʔɬ), Semiahmoo, Katzie, Kwikwetlem (kʷikʷəƛ̓əm), Kwantlen, Qayqayt and Tsawwassen First Nations."
+            "EduAfrica is located on the traditional and unceded territories of the Musqueam (xʷməθkʷəy̓əm), Squamish (Sḵwx̱wú7meshÚxwumixw), Tsleil-Waututh (səl̓ilw̓ətaʔɬ), Semiahmoo, Katzie, Kwikwetlem (kʷikʷəƛ̓əm), Kwantlen, Qayqayt and Tsawwassen First Nations."
           }
         </p>
         <ul className="grid grid-cols-2 lg:grid-cols-5 justify-between items-center mx-16 lg:divide-x-2 my-10">
