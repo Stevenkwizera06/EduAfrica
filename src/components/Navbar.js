@@ -7,6 +7,7 @@ import { FiMenu } from "react-icons/fi";
 import Wrapper from "./Wrapper";
 import logo6 from "../Images/EduAfrica1.png";
 import logo7 from "../Images/EduAfrica2.png";
+import GridMenu from "./GridMenu";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
@@ -14,25 +15,25 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative h-screen">
       <video
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[90%] lg:h-[91%] "
+        className="absolute object-cover top-0 left-0 w-full h-[90%]  lg:h-[91%] "
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
       <Wrapper>
-        <div className="relative mx-auto flex flex-col justify-items-start justify-between  pt-6 lg:px-0 ">
-          <div className="flex items-center w-full justify-between mx-auto py-6 ">
+        <div className="relative mx-auto flex flex-col justify-items-start justify-between lg:px-0 pt-6">
+          <div className="flex items-center w-full justify-between mx-auto ">
             <a href="">
-              <Image 
-              alt=""
+              <Image
+                alt=""
                 className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] hidden md:block"
                 src={logo6}
               />
-              <Image 
-              alt=""
+              <Image
+                alt=""
                 className=" w-44 h-32  block md:hidden"
                 src={logo7}
               />
@@ -44,14 +45,14 @@ function Navbar() {
             </a>
             <div className="group w-fit md:flex justify-center ">
               <a
-                className="px-10 hidden md:flex text-white cursor-pointer font-semibold py-4 bg-darkBlue "
+                className="px-10 hidden md:flex text-white cursor-pointer font-semibold py-3 bg-darkBlue "
                 href="#"
               >
                 Menu
               </a>
 
               <div
-                className="hidden absolute md:group-hover:block mt-14"
+                className="hidden absolute md:group-hover:block mt-12"
                 onMouseLeave={setActiveTab}
               >
                 <div className="flex">
@@ -104,18 +105,17 @@ function Navbar() {
                   ))}
                 </div>
               </div>
-            <DropDown showMenu={showMenu}/>
-
+              <DropDown showMenu={showMenu} />
             </div>
-            
+
             <FiMenu
-                className="md:hidden"
-                size={30}
-                color="fff"
-                onClick={() => setShowMenu(!showMenu)}
-              />
+              className="md:hidden"
+              size={30}
+              color="fff"
+              onClick={() => setShowMenu(!showMenu)}
+            />
             <a
-              className="bg-pink px-4 lg:px-8 py-2 lg:py-4 w-fit text-center text-white font-semibold "
+              className="bg-pink px-8 lg:px-8 py-3 w-fit text-center text-white font-semibold "
               href=""
             >
               Donate
@@ -130,7 +130,7 @@ function Navbar() {
               </span>
             </h4>
           </div>
-          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8  invisible md:visible  md:grid lg:grid-cols-3 ">
+          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 invisible lg:visible md:grid lg:grid-cols-3 ">
             <a
               className="lg:px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
               href=""
@@ -154,6 +154,7 @@ function Navbar() {
           </div>
         </div>
       </Wrapper>
+      <GridMenu styles={"md:absolute md:-bottom-[21%] md:right-[30%] md:left-[30%]"} />
     </div>
   );
 }

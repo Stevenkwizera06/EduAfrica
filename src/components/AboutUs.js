@@ -4,8 +4,7 @@ import Wrapper from "./Wrapper";
 
 function AboutUs() {
   return (
-    <div className="mt-20">
-      {" "}
+    <div className="mt-20 md:mt-64 lg:mt-20">
       <Wrapper>
         <div className="grid md:grid-cols-2 lg:p-16 gap-8">
           <div className="flex flex-col gap-4">

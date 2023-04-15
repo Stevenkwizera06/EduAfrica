@@ -44,9 +44,9 @@ const VideoText = () => {
                 className={`w-full h-full `}
                 src="https://www.youtube.com/embed/6hkDkKOAGZY"
                 title="3 CHANGING LIVES"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -81,9 +81,9 @@ const VideoText = () => {
                 className={`w-full h-full `}
                 src="https://www.youtube.com/embed/6hkDkKOAGZY"
                 title="3 CHANGING LIVES"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
