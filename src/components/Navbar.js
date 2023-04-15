@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
+import Image from "next/image";
 import items from "@/data/menuItems";
 import DropDown from "./DropDown";
 import { FiMenu } from "react-icons/fi";
 import Wrapper from "./Wrapper";
+import logo6 from "../Images/EduAfrica1.png";
+import logo7 from "../Images/EduAfrica2.png";
 
 function Navbar() {
   const [activeTab, setActiveTab] = useState();
@@ -21,13 +24,23 @@ function Navbar() {
       ></video>
       <Wrapper>
         <div className="relative mx-auto flex flex-col justify-items-start justify-between  pt-6 lg:px-0 ">
-          <div className="flex items-center w-full justify-between mx-auto py-6">
+          <div className="flex items-center w-full justify-between mx-auto py-6 ">
             <a href="">
-              <img
-                className="h-[45px] lg:h-[61px]"
-                src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo_white_letters.png"
-                alt=""
+              <Image 
+              alt=""
+                className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] hidden md:block"
+                src={logo6}
               />
+              <Image 
+              alt=""
+                className=" w-44 h-32  block md:hidden"
+                src={logo7}
+              />
+              {/* <img
+                className="h-[45px] lg:h-[61px] bg-red-600"
+                src={logo2}
+                alt=""
+              /> */}
             </a>
             <div className="group w-fit md:flex justify-center ">
               <a

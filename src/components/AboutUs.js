@@ -8,21 +8,20 @@ function AboutUs() {
       <Wrapper>
         <div className="grid md:grid-cols-2 lg:p-16 gap-8">
           <div className="flex flex-col gap-4">
-            <h1 className="flex text-3xl font-bold">
-              Capital campaign program
-            </h1>
+            <h1 className="flex text-3xl font-bold">Pledge campaign program</h1>
             <p className="">
-              The Children’s Foundation is working to secure our future in
-              Surrey. Help us make sure that we are there for children and
-              families for years to come. Owning our facility out right will
-              provide greater predictability and control over our occupancy
-              costs and help us focus resources and energy on the services
-              children, families, and community need.
+              EduAfrica is a registered charity that was founded in 2010 by a
+              Rwandan residing in Canada. Their mission is to assist children in
+              realizing their educational aspirations in Africa, particularly in
+              Rwanda and Malawi. EduAfrica is committed to raising funds for a
+              scholarship program that provides support, with the aim of
+              ensuring that the people of Rwanda never have to experience
+              another genocide or the associated atrocities.
             </p>
-            <p>
+            {/* <p>
               We need your help and support to raise $5,000,000 in the next 5
               years.
-            </p>
+            </p> */}
             <div className="self-center lg:self-start py-4">
               <a
                 className="px-10 text-white bg-[#2E8BC4] hover:bg-[#B42886] text-xl font-semibold py-4 bg-pink-500"
@@ -50,13 +49,13 @@ function AboutUs() {
           <div className="flex flex-col gap-4 order-1 md:order-2 ">
             <h1 className="flex text-3xl font-bold">What we do</h1>
             <p className="">
-              The Children’s Foundation provides specialized treatment,
-              counselling and attentive care to children, youth, and families
-              with complex challenges through a variety of programs and
-              services. Some of the challenges our clients face ranges from ASD,
-              FASD, severe social, emotional, and developmental disorders and
-              disabilities, and challenges that stem from a history of trauma,
-              among many others.
+              EduAfrica recognizes the immense potential of education and
+              mentorship in cultivating human compassion and empathy. As an
+              inclusive organization, we hold a deep belief in promoting
+              diversity, social justice, and human rights for all individuals,
+              regardless of their race, religion, ethnicity, culture, language,
+              gender, sexual orientation, or any other socially ascribed
+              characteristic.
             </p>
             <div className="self-center lg:self-start py-4">
               <a
@@ -71,19 +70,16 @@ function AboutUs() {
       </Wrapper>
       <Wrapper>
         <h1 className="text-[30px] font-[700] leading-[36px] text-[#2e2e2e] max-w-[980px] px-[10px]  text-center">
-          The Children’s Foundation has helped thousands of children since 1957
+          The EduAfrica has helped thousands of children since 2010
         </h1>
         <p className="mt-4 font-[500] leading-[28.8px] text-[16px] text-center text-[#707070]">
-          In the late 1940’s and early 1950’s a group of citizens lead by Esther
-          Irwin had grown concerned about children who were not being successful
-          at school and who often did not attend. They realized that without
-          support and assistance, these children were not likely to have a
-          successful outcome as they grew to adulthood. Over a period of ten
-          years they met and planned how to address this issue. In 1957 they
-          incorporated a charitable, non-profit society from the current
-          location in Vancouver and began to help these children and their
-          families. Since that time, The Children’s Foundation has helped
-          thousands of vulnerable children and their families to better lives.
+          EduAfrica is parent to GENIUS EDUCATION FOUNDATION TRUST (GEFT) is a
+          highly sensitive rural based, non – profit making organisation formed
+          to solely serve as a revelation tool to the ignored issues be it
+          social, cultural, economic, posing a danger to community rural
+          development. GEFT is an organisation set up to vulnerable groups
+          across the country in trying to make life possible and sustainable
+          with passion, knowledge and skills
         </p>
         <div className="grid lg:grid-cols-2 mt-4 ">
           <img
@@ -96,17 +92,17 @@ function AboutUs() {
               Our mission
             </h1>
             <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
-              Improving lives by helping children and their families navigate
-              complex challenges.
+              Reducing poverty through education and advocacy
             </p>
             <div className="w-[70%] h-[1px] bg-[#2e2e2e]" />
             <h1 className="text-5xl text-[#2e2e2e] text-[30px] leading-[36px] text-center font-bold">
               Our vision
             </h1>
             <p className="text-[#707070] max-w-[480px] leading-[28.8px] font-[500]">
-              Communities in which each child has the opportunity for optimum
-              growth and development, and each family is able to provide the
-              best for its children.
+              We envision communities where every child has the opportunity to
+              achieve their full potential in growth and development, and where
+              every family is empowered to provide the best possible care for
+              their children.
             </p>
           </div>
         </div>
@@ -124,7 +120,7 @@ function AboutUs() {
             </h1>
             <p className="self-start">
               Sign up to get updates and stay current on what’s happening at the
-              Children’s Foundation.
+              EduAfrica.
             </p>
             <p className="text-lg font-semibold ">Email Address *</p>
             <input
@@ -140,9 +136,9 @@ function AboutUs() {
               </a>
             </div>
             <p className="text-[14px] font-[300] leading-[28.8px]">
-              By submitting this form you are granting The Children’s Foundation
-              permission to email you. You may unsubscribe via the link found at
-              the bottom of every email.
+              By submitting this form you are granting The EduAfrica permission
+              to email you. You may unsubscribe via the link found at the bottom
+              of every email.
             </p>
           </div>
         </div>
