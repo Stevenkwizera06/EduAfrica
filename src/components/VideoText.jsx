@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 const VideoText = () => {
   let [play, setPlay] = useState(false);
   let [playTwo, setPlayTwo] = useState(false);
-  var src = "https://www.youtube.com/embed?v=6hkDkKOAGZY&t=2s";
+  var src = "https://www.youtube.com/embed/6hkDkKOAGZY";
   return (
     <Wrapper>
       <div className="max-w-6xl mx-auto mt-24 mb-24 flex flex-col 24 pl-">
