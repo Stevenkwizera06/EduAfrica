@@ -6,7 +6,7 @@ function AboutUs() {
   return (
     <div className="mt-20 md:mt-52 lg:mt-20">
       <Wrapper>
-        <div className="grid lg:grid-cols-2 lg:p-16 gap-8">
+        <div className="grid lg:grid-cols-2 lg:px-16 lg:pb-3 lg:pt-0 gap-8">
           <div className="flex flex-col gap-8">
             <h1 className="flex text-3xl font-bold">Pledge campaign program</h1>
             <p className="">
@@ -68,7 +68,7 @@ function AboutUs() {
           </div>
         </div>
       </Wrapper>
-      <Wrapper styles={"flex flex-col gap-8 lg:gap-0 pt-8 lg:pt-0 "}>
+      <Wrapper styles={"flex flex-col gap-8 pt-8 "}>
         <h1 className="text-[30px] font-[700] leading-[36px] text-[#2e2e2e] max-w-[980px] px-[10px] lg:text-center">
           The EduAfrica has helped thousands of children since 2010
         </h1>
@@ -87,7 +87,7 @@ function AboutUs() {
             alt=""
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_6977-scaled.jpeg"
           />
-          <div className="flex flex-col items-center text-center gap-6 bg-[#ecdc01] p-[30px]">
+          <div className="flex flex-col items-center text-center gap-6 bg-[#ecdc01] mb-10 p-[30px]">
             <h1 className="text-5xl text-[#2e2e2e] text-[30px] leading-[36px] text-center font-bold py-2.5">
               Our mission
             </h1>
@@ -107,15 +107,18 @@ function AboutUs() {
           </div>
         </div>
       </Wrapper>
-      <div className=" bg-[#2e8bc4] mt-8 lg:-mb-8 min-h-[600px] px-2">
-        <div className="max-w-[1080px] mx-auto grid lg:grid-cols-2 gap-8 justify-center items-center">
-          <img
-            className="object-cover max-w-full lg:w-full h-11/12  relative"
-            src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
-            alt=""
-          />
-          <div className="text-white flex flex-col gap-6 items-start   mt-28 ">
-            <h1 className="text-3xl font-bold">
+      <div className=" bg-[#2e8bc4] py-32 min-h-[600px] lg:px-2 lg:py-0">
+        <Wrapper styles="grid lg:grid-cols-2 gap-24 lg:gap-16 ">
+          <div className="flex items-center relative h-fit lg:h-full">
+            <img
+              className="object-cover max-w-full lg:w-full "
+              src="https://childrens-foundation.org/wp-content/uploads/2022/11/childrens-foundation_logo-01-1.png"
+              alt=""
+            />
+          </div>
+
+          <div className="text-white flex flex-col gap-3 items-start ">
+            <h1 className="text-3xl font-bold pb-3">
               Get updates straight to your inbox
             </h1>
             <p className="self-start">
@@ -141,7 +144,7 @@ function AboutUs() {
               of every email.
             </p>
           </div>
-        </div>
+        </Wrapper>
       </div>
       {/* <div className=" relative">
           <img
@@ -179,32 +182,32 @@ function AboutUs() {
             </p>
           </div>
         </div> */}
-      <div className=" relative  grid grid-cols-[20px_1fr_20px] lg:grid-cols-[1fr_1080px_1fr] grid-rows-[30px_1fr_30px] lg:grid-rows-[300px_150px_100px] ">
+      <div className="relative grid grid-cols-[20px_1fr_20px] lg:grid-cols-[1fr_1080px_1fr] grid-rows-[30px_1fr_30px] lg:grid-rows-[300px_150px_100px] ">
         <div className="col-start-1 col-end-4 row-start-1 row-end-3 w-full bg-green-300">
           <img
-            className="object-cover  h-full w-full"
+            className="object-cover h-96 lg:h-full w-full"
             src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7027-scaled.jpeg"
             alt=""
           />
         </div>
-        <div className="flex justify-center mb-8 col-start-2 col-end-3 row-start-2 row-end-3 lg:row-end-4">
+        <Wrapper styles="flex absolute lg:relative -bottom-[30%] justify-center mb-8 col-start-2 col-end-3 row-start-2 row-end-3 lg:row-end-4">
           <div
-            className="lg:px-8  text-white font-semibold lg:-mt-24 text-center py-8 text-xl bg-[#072951] max-w-[504px] min-h-[238px] relative z-40"
+            className="lg:px-8 text-white font-semibold lg:-mt-24 text-center py-8 text-xl bg-[#072951] px-12 min-h-[238px] relative z-40"
             href=""
           >
             <div className="flex flex-col items-center">
-              <p>
+              <p className="text-2xl">
                 We improve the lives of children and families with your support
               </p>
               <a
-                className="px-8 w-36 justify-center  mt-10  text-white font-semibold py-4 bg-[#B42886]"
+                className="px-8  justify-center mt-10 text-white font-semibold w-fit whitespace-nowrap py-4 bg-[#B42886]"
                 href=""
               >
-                DONATE
+                Donate now
               </a>
             </div>
           </div>
-        </div>
+        </Wrapper>
       </div>
     </div>
   );

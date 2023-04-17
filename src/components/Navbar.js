@@ -24,7 +24,7 @@ function Navbar() {
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
       <Wrapper>
-        <div className="relative mx-auto flex flex-col justify-items-start h-[100vh] lg:h-fit justify-between pt-6 lg:px-0 ">
+        <div className="relative mx-auto flex flex-col justify-items-start h-[100vh] lg:h-fit justify-between lg:pt-6 lg:px-0 ">
           <div className="flex items-center w-full justify-between mx-auto ">
             <a href="">
               <Image
@@ -34,7 +34,7 @@ function Navbar() {
               />
               <Image
                 alt=""
-                className=" w-44 h-32 block md:hidden"
+                className="w-32 h-32 sm:w-44 sm:h-32 block md:hidden"
                 src={logo7}
               />
               {/* <img
@@ -109,13 +109,13 @@ function Navbar() {
             </div>
 
             <FiMenu
-              className="lg:hidden text-5xl"
+              className="lg:hidden text-xl md:text-5xl"
               // size={30}
               color="fff"
               onClick={() => setShowMenu(!showMenu)}
             />
             <a
-              className="bg-pink px-8 lg:px-8 py-3 w-fit text-center text-white font-semibold "
+              className="bg-pink text-sm md:text-base px-4 md:px-8 lg:px-8 py-2 md:py-3 w-fit text-center text-white font-semibold "
               href=""
             >
               Donate
@@ -123,7 +123,7 @@ function Navbar() {
           </div>
 
           <div className="flex items-center md:max-w-[1229px] mx-auto">
-            <h4 className="font-bold text-white text-[40px] md:text-[80px] md:leading-[90px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
+            <h4 className="font-bold text-white text-[40px]  md:text-[80px] md:leading-[90px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
               CHANGING <br /> LIVES <br />
               <span className="tracking">
                 EVERY <span className="text-brightYellow ">DAY</span>
