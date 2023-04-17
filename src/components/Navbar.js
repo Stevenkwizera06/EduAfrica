@@ -15,26 +15,26 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="w-full relative h-screen">
+    <div className="w-full relative h-[100vh] lg:h-full">
       <video
         loop
         autoPlay
         muted
-        className="absolute object-cover top-0 left-0 w-full h-[90%]  lg:h-[91%] "
+        className="absolute object-cover top-0 left-0 w-full h-[90%] lg:h-[93%] "
         src="https://childrens-foundation.org/wp-content/uploads/2022/11/BANNER_Compressed.mp4"
       ></video>
       <Wrapper>
-        <div className="relative mx-auto flex flex-col justify-items-start justify-between lg:px-0 pt-6">
+        <div className="relative mx-auto flex flex-col justify-items-start h-[100vh] lg:h-fit justify-between pt-6 lg:px-0 ">
           <div className="flex items-center w-full justify-between mx-auto ">
             <a href="">
               <Image
                 alt=""
-                className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] hidden md:block"
+                className="h-[100px] w-[100px] md:h-[200px] md:w-[200px] hidden md:block"
                 src={logo6}
               />
               <Image
                 alt=""
-                className=" w-44 h-32  block md:hidden"
+                className=" w-44 h-32 block md:hidden"
                 src={logo7}
               />
               {/* <img
@@ -43,9 +43,9 @@ function Navbar() {
                 alt=""
               /> */}
             </a>
-            <div className="group w-fit md:flex justify-center ">
+            <div className="group w-fit hidden lg:flex justify-center ">
               <a
-                className="px-10 hidden md:flex text-white cursor-pointer font-semibold py-3 bg-darkBlue "
+                className="px-10 hidden lg:flex text-white cursor-pointer font-semibold py-3 bg-darkBlue "
                 href="#"
               >
                 Menu
@@ -109,8 +109,8 @@ function Navbar() {
             </div>
 
             <FiMenu
-              className="md:hidden"
-              size={30}
+              className="lg:hidden text-5xl"
+              // size={30}
               color="fff"
               onClick={() => setShowMenu(!showMenu)}
             />
@@ -122,15 +122,15 @@ function Navbar() {
             </a>
           </div>
 
-          <div className="flex items-center justify-start md:max-w-[1229px]  mx-auto">
-            <h4 className="font-bold text-white text-[40px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
+          <div className="flex items-center md:max-w-[1229px] mx-auto">
+            <h4 className="font-bold text-white text-[40px] md:text-[80px] md:leading-[90px] leading-[36px] lg:text-[100px] lg:leading-[120px]">
               CHANGING <br /> LIVES <br />
               <span className="tracking">
                 EVERY <span className="text-brightYellow ">DAY</span>
               </span>
             </h4>
           </div>
-          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 invisible lg:visible md:grid lg:grid-cols-3 ">
+          <div className="max-w-[1080px] mx-auto w-full gap-12 mt-8 invisible flex lg:visible lg:relative xl:grid xl:grid-cols-3 ">
             <a
               className="lg:px-14 text-white font-semibold text-center py-8 text-2xl bg-brightYellow "
               href=""
@@ -154,7 +154,11 @@ function Navbar() {
           </div>
         </div>
       </Wrapper>
-      <GridMenu styles={"md:absolute md:-bottom-[21%] md:right-[30%] md:left-[30%]"} />
+      <GridMenu
+        styles={
+          "hidden md:absolute md:block top-[86vh] md:right-[30%] md:left-[30%]"
+        }
+      />
     </div>
   );
 }

@@ -4,10 +4,10 @@ import Wrapper from "./Wrapper";
 
 function AboutUs() {
   return (
-    <div className="mt-20 md:mt-64 lg:mt-20">
+    <div className="mt-20 md:mt-52 lg:mt-20">
       <Wrapper>
-        <div className="grid md:grid-cols-2 lg:p-16 gap-8">
-          <div className="flex flex-col gap-4">
+        <div className="grid lg:grid-cols-2 lg:p-16 gap-8">
+          <div className="flex flex-col gap-8">
             <h1 className="flex text-3xl font-bold">Pledge campaign program</h1>
             <p className="">
               EduAfrica is a registered charity that was founded in 2010 by a
@@ -22,7 +22,7 @@ function AboutUs() {
               We need your help and support to raise $5,000,000 in the next 5
               years.
             </p> */}
-            <div className="self-center lg:self-start py-4">
+            <div className="self-center md:self-start py-4">
               <a
                 className="px-10 text-white bg-[#2E8BC4] hover:bg-[#B42886] text-xl font-semibold py-4 bg-pink-500"
                 href=""
@@ -39,15 +39,15 @@ function AboutUs() {
             />
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:p-16 gap-8 py-4">
+        <div className="grid lg:grid-cols-2 lg:p-16 gap-8 py-4">
           <div className="order-2 lg:order-1 py-4">
             <img
               src="https://childrens-foundation.org/wp-content/uploads/2022/11/TRW_7098-scaled.jpeg"
               alt=""
             />
           </div>
-          <div className="flex flex-col gap-4 order-1 md:order-2 ">
-            <h1 className="flex text-3xl font-bold">What we do</h1>
+          <div className="flex flex-col gap-8 order-1 lg:order-2 ">
+            <h1 className="flex text-3xl font-bold pt-5 lg:pt-0">What we do</h1>
             <p className="">
               EduAfrica recognizes the immense potential of education and
               mentorship in cultivating human compassion and empathy. As an
@@ -57,7 +57,7 @@ function AboutUs() {
               gender, sexual orientation, or any other socially ascribed
               characteristic.
             </p>
-            <div className="self-center lg:self-start py-4">
+            <div className="self-center md:self-start py-4">
               <a
                 className="px-10 text-white  bg-[#B42886] hover:bg-[#ECDC01] text-xl font-semibold py-4 bg-pink-500"
                 href=""
@@ -68,11 +68,11 @@ function AboutUs() {
           </div>
         </div>
       </Wrapper>
-      <Wrapper>
-        <h1 className="text-[30px] font-[700] leading-[36px] text-[#2e2e2e] max-w-[980px] px-[10px]  text-center">
+      <Wrapper styles={"flex flex-col gap-8 lg:gap-0 pt-8 lg:pt-0 "}>
+        <h1 className="text-[30px] font-[700] leading-[36px] text-[#2e2e2e] max-w-[980px] px-[10px] lg:text-center">
           The EduAfrica has helped thousands of children since 2010
         </h1>
-        <p className="mt-4 font-[500] leading-[28.8px] text-[16px] text-center text-[#707070]">
+        <p className="mt-4 font-[500] leading-[28.8px] text-[16px] lg:text-center text-[#707070]">
           EduAfrica is parent to GENIUS EDUCATION FOUNDATION TRUST (GEFT) is a
           highly sensitive rural based, non – profit making organisation formed
           to solely serve as a revelation tool to the ignored issues be it

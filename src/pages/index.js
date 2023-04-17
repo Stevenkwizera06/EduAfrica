@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Navbar />
-
+      <GridMenu styles={"md:hidden"} />
       <AboutUs />
       <VideoText />
       <Footer />
